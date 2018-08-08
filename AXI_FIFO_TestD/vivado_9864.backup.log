@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 02 09:16:24 2018
+# Process ID: 9864
+# Current directory: C:/Users/yaris/Desktop/AXI_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2568 C:\Users\yaris\Desktop\AXI_FIFO\AXI_FIFO.xpr
+# Log file: C:/Users/yaris/Desktop/AXI_FIFO/vivado.log
+# Journal file: C:/Users/yaris/Desktop/AXI_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/yaris/Desktop/AXI_FIFO(Test)' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:32 . Memory (MB): peak = 906.098 ; gain = 349.016
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 02 09:52:31 2018...

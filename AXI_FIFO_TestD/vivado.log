@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Aug 03 16:28:49 2018
+# Process ID: 19804
+# Current directory: C:/Users/yaris/Desktop/AXI_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18684 C:\Users\yaris\Desktop\AXI_FIFO\AXI_FIFO.xpr
+# Log file: C:/Users/yaris/Desktop/AXI_FIFO/vivado.log
+# Journal file: C:/Users/yaris/Desktop/AXI_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yaris/Desktop/AXI_FIFO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 899.059 ; gain = 354.125
+update_compile_order -fileset sim_1
+open_bd_design {C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.0 - fifo_generator_0
+INFO: [xilinx.com:ip:fifo_generator:13.0-5968] /fifo_generator_0Executing the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.0 - fifo_generator_1
+INFO: [xilinx.com:ip:fifo_generator:13.0-5968] /fifo_generator_1Executing the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:ila:6.0 - ila_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:ila:6.0 - ila_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_2
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Successfully read diagram <system> from BD file <C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1135.941 ; gain = 234.094
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 03 16:37:39 2018...
