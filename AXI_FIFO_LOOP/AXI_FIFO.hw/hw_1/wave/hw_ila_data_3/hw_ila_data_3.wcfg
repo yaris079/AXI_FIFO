@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/yaris/Desktop/project/AXI_FIFO/AXI_FIFO.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="8">
+	</WVObjectSize>
+	<wvobject fp_name="system_i/fifo_generator_1_M_AXIS_TKEEP" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_generator_1_M_AXIS_TKEEP[3:0]</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_generator_1_M_AXIS_TKEEP[3:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/fifo_generator_1_M_AXIS_TDATA" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_generator_1_M_AXIS_TDATA[31:0]</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_generator_1_M_AXIS_TDATA[31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/S_AXIS_1_TDATA" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/S_AXIS_1_TDATA[31:0]</obj_property>
+		<obj_property name="ObjectShortName">system_i/S_AXIS_1_TDATA[31:0]</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/fifo_generator_1_M_AXIS_TLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_generator_1_M_AXIS_TLAST</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_generator_1_M_AXIS_TLAST</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/S_AXIS_1_TLAST" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/S_AXIS_1_TLAST</obj_property>
+		<obj_property name="ObjectShortName">system_i/S_AXIS_1_TLAST</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/S_AXIS_1_TREADY" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/S_AXIS_1_TREADY</obj_property>
+		<obj_property name="ObjectShortName">system_i/S_AXIS_1_TREADY</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/S_AXIS_1_TVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/S_AXIS_1_TVALID</obj_property>
+		<obj_property name="ObjectShortName">system_i/S_AXIS_1_TVALID</obj_property>
+	</wvobject>
+	<wvobject fp_name="system_i/fifo_generator_1_M_AXIS_TVALID" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">system_i/fifo_generator_1_M_AXIS_TVALID</obj_property>
+		<obj_property name="ObjectShortName">system_i/fifo_generator_1_M_AXIS_TVALID</obj_property>
+	</wvobject>
+</wave_config>
+
