@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 02 08:54:43 2018
+# Process ID: 19060
+# Current directory: C:/Users/yaris/Desktop/AXI_FIFO(Test)
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14604 C:\Users\yaris\Desktop\AXI_FIFO(Test)\AXI_FIFO.xpr
+# Log file: C:/Users/yaris/Desktop/AXI_FIFO(Test)/vivado.log
+# Journal file: C:/Users/yaris/Desktop/AXI_FIFO(Test)\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.xpr
+update_compile_order -fileset sim_1
+open_bd_design {C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.srcs/sources_1/bd/system/system.bd}
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk/system_wrapper.hdf
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk/system_wrapper.hdf
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO(Test)/AXI_FIFO.sdk/system_wrapper.hdf
+set_param general.maxThreads 8

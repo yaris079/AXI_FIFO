@@ -1,0 +1,14 @@
+09:43:24 **** Auto Build of configuration Debug for project xaxidma_example_sg_poll ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../xaxidma_example_sg_poll_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:14:0:
+c:\xilinx\sdk\2015.4\gnu\arm\nt\arm-xilinx-eabi\include\termios.h:4:25: fatal error: sys/termios.h: No such file or directory
+ #include <sys/termios.h>
+                         ^
+compilation terminated.
+make: *** [src/helloworld.o] ´íÎó 1
+
+09:43:25 Build Finished (took 1s.150ms)
+

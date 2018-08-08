@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Aug 02 09:54:07 2018
+# Process ID: 8308
+# Current directory: C:/Users/yaris/Desktop/AXI_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18092 C:\Users\yaris\Desktop\AXI_FIFO\AXI_FIFO.xpr
+# Log file: C:/Users/yaris/Desktop/AXI_FIFO/vivado.log
+# Journal file: C:/Users/yaris/Desktop/AXI_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.xpr
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+open_bd_design {C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+get_param general.maxThreads
+set_param general.maxThreads 8
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {127}] [get_bd_cells processing_system7_0]
+endgroup
+generate_target all [get_files  C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -directory C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.ip_user_files/sim_scripts -force -quiet
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+endgroup
+undo
+update_compile_order -fileset sim_1
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M05_AXI] [get_bd_nets axi_timer_0_interrupt] [get_bd_cells axi_timer_0]
+update_compile_order -fileset sim_1
+regenerate_bd_layout
+generate_target all [get_files  C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -directory C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.ip_user_files/sim_scripts -force -quiet
+update_compile_order -fileset sim_1
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {2}] [get_bd_cells xlconcat_0]
+endgroup
+regenerate_bd_layout
+generate_target all [get_files  C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd]
+export_ip_user_files -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -directory C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.ip_user_files/sim_scripts -force -quiet
+update_compile_order -fileset sim_1
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property  ip_repo_paths  C:/Users/yaris/Desktop/AXI_FIFO [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:my_signal_ip:1.0 my_signal_ip_0
+endgroup
+update_compile_order -fileset sim_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:my_signal_ip:1.0 [get_ips  system_my_signal_ip_0_0]
+set_property location {0.5 -82 714} [get_bd_cells my_signal_ip_0]
+set_property location {1 -39 597} [get_bd_cells my_signal_ip_0]
+delete_bd_objs [get_bd_cells my_signal_ip_0]
+update_compile_order -fileset sim_1
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sim_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
