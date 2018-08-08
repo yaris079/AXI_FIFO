@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Sun Jul 29 22:41:02 2018
+# Process ID: 10776
+# Current directory: C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

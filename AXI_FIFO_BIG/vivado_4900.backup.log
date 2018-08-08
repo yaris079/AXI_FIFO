@@ -1,0 +1,175 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Jul 29 13:21:56 2018
+# Process ID: 4900
+# Current directory: C:/Users/yaris/Desktop/AXI_FIFO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14468 C:\Users\yaris\Desktop\AXI_FIFO\AXI_FIFO.xpr
+# Log file: C:/Users/yaris/Desktop/AXI_FIFO/vivado.log
+# Journal file: C:/Users/yaris/Desktop/AXI_FIFO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 912.930 ; gain = 340.973
+open_bd_design {C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.0 - fifo_generator_0
+INFO: [xilinx.com:ip:fifo_generator:13.0-5968] /fifo_generator_0Executing the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.0 - fifo_generator_1
+INFO: [xilinx.com:ip:fifo_generator:13.0-5968] /fifo_generator_1Executing the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:ila:6.0 - ila_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+CRITICAL WARNING: [BD 41-1289] Cannot find Address Block </processing_system7_0/S_AXI_HP2/HP2_DDR_LOWOCM>. Cannot create segment <SEG_processing_system7_0_HP2_DDR_LOWOCM> at <0x00000000 [ 1G ]> in Address Space </axi_dma_1/Data_MM2S>.
+WARNING: [BD 41-705] Could not load assignment of </processing_system7_0/S_AXI_HP2/HP2_DDR_LOWOCM> into address space <Data_MM2S>
+Successfully read diagram <system> from BD file <C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1102.508 ; gain = 189.578
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP2 {1}] [get_bd_cells processing_system7_0]
+endgroup
+update_compile_order -fileset sim_1
+copy_bd_objs /  [get_bd_cells {axi_mem_intercon}]
+copy_bd_objs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1165.707 ; gain = 0.000
+update_compile_order -fileset sim_1
+set_property location {3 945 370} [get_bd_cells axi_mem_intercon1]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_mem_intercon1/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP2]
+delete_bd_objs [get_bd_intf_nets axi_dma_1_M_AXI_MM2S]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_1/M_AXI_MM2S] -boundary_type upper [get_bd_intf_pins axi_mem_intercon1/S00_AXI]
+startgroup
+set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {1}] [get_bd_cells axi_mem_intercon]
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {1}] [get_bd_cells axi_mem_intercon1]
+endgroup
+connect_bd_net [get_bd_pins axi_mem_intercon1/ACLK] [get_bd_pins axi_mem_intercon/ACLK] -boundary_type upper
+connect_bd_net [get_bd_pins axi_mem_intercon1/ARESETN] [get_bd_pins rst_processing_system7_0_100M/interconnect_aresetn]
+connect_bd_net [get_bd_pins axi_mem_intercon1/S00_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_mem_intercon1/S00_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] -boundary_type upper
+connect_bd_net [get_bd_pins axi_mem_intercon1/M00_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins axi_mem_intercon1/M00_ARESETN] [get_bd_pins axi_mem_intercon/M00_ARESETN] -boundary_type upper
+delete_bd_objs [get_bd_intf_nets fifo_generator_1_M_AXIS] [get_bd_intf_ports M_AXIS]
+delete_bd_objs [get_bd_intf_nets S_AXIS_1] [get_bd_intf_ports S_AXIS]
+connect_bd_intf_net [get_bd_intf_pins fifo_generator_1/M_AXIS] [get_bd_intf_pins fifo_generator_0/S_AXIS]
+delete_bd_objs [get_bd_nets s_aclk_1]
+delete_bd_objs [get_bd_ports s_aclk]
+connect_bd_net [get_bd_pins fifo_generator_0/s_aclk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+delete_bd_objs [get_bd_nets m_aclk]
+delete_bd_objs [get_bd_ports m_aclk]
+connect_bd_net [get_bd_pins fifo_generator_1/m_aclk] [get_bd_pins processing_system7_0/FCLK_CLK1]
+delete_bd_objs [get_bd_nets s_aresetn_1]
+delete_bd_objs [get_bd_ports s_aresetn]
+connect_bd_net [get_bd_pins fifo_generator_0/s_aresetn] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn]
+delete_bd_objs [get_bd_ports peripheral_aresetn]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets processing_system7_0_axi_periph_M03_AXI] [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_cells axi_gpio_1]
+update_compile_order -fileset sim_1
+delete_bd_objs [get_bd_intf_ports gpio_rtl]
+regenerate_bd_layout
+delete_bd_objs [get_bd_ports FCLK_CLK1]
+regenerate_bd_layout
+assign_bd_address
+</processing_system7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is being mapped into </axi_dma_1/Data_MM2S> at <0x00000000 [ 1G ]>
+generate_target all [get_files  C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/processing_system7_0/S_AXI_HP2_ACLK
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_HP2_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+generate_target all [get_files  C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd]
+CRITICAL WARNING: [BD 41-1343] Reset pin /fifo_generator_0/s_aresetn (associated clock /fifo_generator_0/s_aclk) is connected to reset source /rst_processing_system7_0_100M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /processing_system7_0/FCLK_CLK1.
+Verilog Output written to : C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/hdl/system.v
+Verilog Output written to : C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/hdl/system_wrapper.v
+Wrote  : <C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd> 
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_processing_system7_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_processing_system7_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_processing_system7_0_0'...
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] system_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'system_processing_system7_0_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_processing_system7_0_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_1 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_fifo_generator_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_fifo_generator_0_1'...
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_fifo_generator_0_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_fifo_generator_0_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_xbar_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_xbar_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_xbar_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_xbar_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_auto_pc_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_auto_pc_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_auto_us_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_auto_us_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_auto_us_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_auto_us_0'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_auto_pc_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_auto_pc_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_auto_pc_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_auto_pc_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_auto_pc_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_auto_pc_2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_auto_pc_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_auto_pc_2'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon1/s00_couplers/auto_pc .
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'system_auto_us_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'system_auto_us_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'system_auto_us_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'system_auto_us_1'...
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon1/s00_couplers/auto_us .
+Exporting to file C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/hdl/system.hwdef
+generate_target: Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1310.121 ; gain = 110.676
+export_ip_user_files -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/system.bd] -directory C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.ip_user_files/sim_scripts -force -quiet
+update_compile_order -fileset sim_1
+set_property top_file C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.srcs/sources_1/bd/system/hdl/system_wrapper.v [current_fileset]
+update_compile_order -fileset sources_1
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sun Jul 29 13:32:02 2018] Launched synth_1...
+Run output will be captured here: C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/synth_1/runme.log
+[Sun Jul 29 13:32:02 2018] Launched impl_1...
+Run output will be captured here: C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/runme.log
+file copy -force C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.runs/impl_1/system_wrapper.sysdef C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/AXI_FIFO/AXI_FIFO.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 29 14:11:29 2018...
