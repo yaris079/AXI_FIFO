@@ -1,0 +1,1 @@
+此程序使用的自定义ip核在repo文件夹内，在使用之前请在Vivado的Project Setting中将此文件夹添加至IP核仓库。

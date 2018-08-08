@@ -1,0 +1,1205 @@
+13:47:18 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:47:46 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:50:15 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:50:44 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:51:36 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:52:08 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:52:26 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+13:56:36 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:00:20 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:01:10 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:01:23 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+14:01:48 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+14:02:38 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+14:03:04 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:04:29 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:05:00 **** Incremental Build of configuration Debug for project DMA_Test ****
+make all 
+make: Nothing to be done for `all'.
+14:05:49 **** Build of project DMA_Stream_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+14:06:32 **** Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1152	  22564	  46604	   b60c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:07:05 **** Clean-only build of configuration Debug for project DMA_Stream ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  DMA_Stream.elf.size  DMA_Stream.elf
+' '
+
+****  of configuration Debug for project DMA_Stream ****
+
+Nothing to build for project DMA_Stream
+14:07:08 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62032	   2320	  22636	  86988	  153cc	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:07:26 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:08:07 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:08:49 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+14:09:25 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:09:41 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:15:22 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:19:16 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:23:16 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:104:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62032	   2320	  22636	  86988	  153cc	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:23:22 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62032	   2320	  22636	  86988	  153cc	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:23:24 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62032	   2320	  22636	  86988	  153cc	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:23:28 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:27:57 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:106:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62448	   2320	  22636	  87404	  1556c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:31:28 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'init_axi_dma_simple':
+../src/helloworld.c:57:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+  printf("p+MM2S_DMACR:%x\n",p+S2MM_DA);
+  ^
+../src/helloworld.c:57:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62464	   2320	  22636	  87420	  1557c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:31:37 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:32:11 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'init_axi_dma_simple':
+../src/helloworld.c:57:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+  printf("p+MM2S_DMACR:%x\n",p+MM2S_DMACR);
+  ^
+../src/helloworld.c:57:2: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned int *' [-Wformat=]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62464	   2320	  22636	  87420	  1557c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:32:15 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:33:02 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62464	   2320	  22636	  87420	  1557c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:33:06 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62464	   2320	  22636	  87420	  1557c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:33:09 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:33:43 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:106:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62448	   2320	  22636	  87404	  1556c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:33:48 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:41:33 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62448	   2320	  22636	  87404	  1556c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:41:37 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:108:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62448	   2320	  22636	  87404	  1556c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:41:45 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:108:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62448	   2320	  22636	  87404	  1556c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:41:49 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:42:51 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:43:10 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:105:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62464	   2320	  22636	  87420	  1557c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:43:22 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:106:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62464	   2320	  22636	  87420	  1557c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:43:51 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'init_axi_dma_simple':
+../src/helloworld.c:70:31: error: invalid type argument of unary '*' (have 'int')
+  printf("sizeofbuffer = %d\n",*(sizeofbuffer));
+                               ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+make: *** [src/helloworld.o] ´íÎó 1
+14:43:59 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:107:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62488	   2320	  22636	  87444	  15594	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:44:12 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:110:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62552	   2320	  22636	  87508	  155d4	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:44:25 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:44:47 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:49:27 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:104:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:57:27 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:57:42 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:58:09 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:108:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:58:26 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:108:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+14:58:41 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:02:09 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:111:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:03:11 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:111:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:03:16 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:111:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:03:32 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:03:44 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:03:58 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:112:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+15:04:03 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+15:04:23 **** Auto Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:111:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+09:19:39 **** Build of project DMA_Stream_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+09:20:49 **** Build of configuration Debug for project DMA_Stream ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:111:6: warning: unused variable 'rxlen' [-Wunused-variable]
+  int rxlen;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../DMA_Stream_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: DMA_Stream.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../DMA_Stream_bsp/ps7_cortexa9_0/lib -o "DMA_Stream.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DMA_Stream.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size DMA_Stream.elf  |tee "DMA_Stream.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62384	   2320	  22636	  87340	  1552c	DMA_Stream.elf
+'Finished building: DMA_Stream.elf.size'
+' '
+09:20:54 **** Build of project test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_0/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+In file included from xaxidma.h:470:0,
+                 from xaxidma.c:83:
+xaxidma.c: In function 'XAxiDma_Reset':
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:313:3: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+   XAxiDma_BdRingSnapShotCurrBd(TxRingPtr);
+   ^
+xaxidma_bdring.h:238:26: warning: assignment makes pointer from integer without a cast
+    (RingPtr)->BdaRestart =      \
+                          ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:243:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+xaxidma_bdring.h:248:27: warning: assignment makes pointer from integer without a cast
+     (RingPtr)->BdaRestart =     \
+                           ^
+xaxidma.c:319:4: note: in expansion of macro 'XAxiDma_BdRingSnapShotCurrBd'
+    XAxiDma_BdRingSnapShotCurrBd(RxRingPtr);
+    ^
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling xadcps"
+'Finished building libraries'
+09:21:47 **** Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1152	  22564	  46604	   b60c	test.elf
+'Finished building: test.elf.size'
+' '
+09:28:35 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:14:28 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:14:59 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:15:24 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.
+14:15:58 **** Incremental Build of configuration Debug for project DMA_Stream ****
+make all 
+make: Nothing to be done for `all'.

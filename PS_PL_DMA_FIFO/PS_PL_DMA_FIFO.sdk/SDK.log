@@ -1,0 +1,2354 @@
+08:52:35 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+08:52:39 INFO  : XSDB server has started successfully.
+08:52:39 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+08:55:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+08:55:12 INFO  : 'fpga -state' command is executed.
+08:55:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:55:12 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:55:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+08:55:13 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+08:55:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+08:55:13 INFO  : 'stop' command is executed.
+08:55:14 INFO  : 'ps7_init' command is executed.
+08:55:14 INFO  : 'ps7_post_config' command is executed.
+08:55:14 INFO  : 'con' command is executed.
+08:55:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+08:55:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:15 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:55:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+08:55:15 INFO  : Memory regions updated for context APU
+08:55:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:15 INFO  : 'con' command is executed.
+08:55:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+08:57:44 INFO  : Disconnected from the channel tcfchan#1.
+08:57:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+08:57:44 INFO  : 'fpga -state' command is executed.
+08:57:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:57:44 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+08:57:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+08:57:45 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+08:57:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+08:57:46 INFO  : 'stop' command is executed.
+08:59:29 ERROR : 'ps7_init' is cancelled.
+08:59:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+09:01:19 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:01:24 INFO  : XSDB server has started successfully.
+09:01:24 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+09:01:24 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+09:03:41 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:03:46 INFO  : XSDB server has started successfully.
+09:03:56 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+09:03:57 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+09:04:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+09:04:34 INFO  : 'fpga -state' command is executed.
+09:04:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:04:35 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:04:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+09:04:35 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:04:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+09:04:36 INFO  : 'stop' command is executed.
+09:08:08 INFO  : 'ps7_init' command is executed.
+09:08:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:08:12 INFO  : 'ps7_post_config' command is executed.
+09:08:13 INFO  : 'con' command is executed.
+09:08:14 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:08:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:08:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+09:08:17 ERROR : unsupported reset
+09:08:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+----------------End of Script----------------
+
+09:08:18 INFO  : System reset is completed.
+09:08:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+09:08:23 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:08:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+09:08:24 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:08:24 INFO  : 'ps7_init' command is executed.
+09:08:24 INFO  : 'ps7_post_config' command is executed.
+09:08:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:08:25 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:08:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+09:08:25 INFO  : Memory regions updated for context APU
+09:08:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:08:26 INFO  : 'con' command is executed.
+09:08:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+09:09:12 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:12:13 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+09:12:13 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+11:37:10 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:37:14 INFO  : XSDB server has started successfully.
+11:37:14 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+11:37:15 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+11:37:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1532316967849,  Project:1532306946549
+11:37:17 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+11:37:17 INFO  : Copied contents of C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:37:21 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:37:25 INFO  : 
+11:37:27 INFO  : Updating hardware inferred compiler options for DMA_Test.
+11:37:27 INFO  : Clearing existing target manager status.
+11:37:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:45 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:37:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:37:45 INFO  : System reset is completed.
+11:37:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:37:50 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:37:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:37:51 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:37:52 INFO  : 'ps7_init' command is executed.
+11:37:52 INFO  : 'ps7_post_config' command is executed.
+11:37:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:52 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:37:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+11:37:52 INFO  : Memory regions updated for context APU
+11:37:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:37:53 INFO  : 'con' command is executed.
+11:37:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:39:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:39:48 INFO  : 'fpga -state' command is executed.
+11:39:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:49 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:39:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:39:49 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:39:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:39:49 INFO  : 'stop' command is executed.
+11:39:50 INFO  : 'ps7_init' command is executed.
+11:39:50 INFO  : 'ps7_post_config' command is executed.
+11:39:50 INFO  : 'con' command is executed.
+11:39:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:39:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:51 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+11:39:51 INFO  : Memory regions updated for context APU
+11:39:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:52 INFO  : 'con' command is executed.
+11:39:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:40:07 INFO  : Disconnected from the channel tcfchan#1.
+11:40:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:40:07 INFO  : 'fpga -state' command is executed.
+11:40:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:08 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:40:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:40:08 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:40:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:40:08 INFO  : 'stop' command is executed.
+11:40:09 INFO  : 'ps7_init' command is executed.
+11:40:09 INFO  : 'ps7_post_config' command is executed.
+11:40:09 INFO  : 'con' command is executed.
+11:40:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:40:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:10 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:40:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+11:40:10 INFO  : Memory regions updated for context APU
+11:40:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:10 INFO  : 'con' command is executed.
+11:40:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:40:45 INFO  : Disconnected from the channel tcfchan#2.
+11:40:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:40:46 INFO  : 'fpga -state' command is executed.
+11:40:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:46 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:40:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:40:46 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:40:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:40:47 INFO  : 'stop' command is executed.
+11:40:47 INFO  : 'ps7_init' command is executed.
+11:40:47 INFO  : 'ps7_post_config' command is executed.
+11:40:47 INFO  : 'con' command is executed.
+11:40:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:40:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:48 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:40:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+11:40:48 INFO  : Memory regions updated for context APU
+11:40:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:49 INFO  : 'con' command is executed.
+11:40:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:42:32 INFO  : Disconnected from the channel tcfchan#3.
+11:42:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:42:33 INFO  : 'fpga -state' command is executed.
+11:42:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:42:33 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:42:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:42:33 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:42:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:42:34 INFO  : 'stop' command is executed.
+11:42:34 INFO  : 'ps7_init' command is executed.
+11:42:34 INFO  : 'ps7_post_config' command is executed.
+11:42:34 INFO  : 'con' command is executed.
+11:42:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:42:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:35 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:42:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+11:42:35 INFO  : Memory regions updated for context APU
+11:42:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:36 INFO  : 'con' command is executed.
+11:42:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:43:13 INFO  : Disconnected from the channel tcfchan#4.
+11:43:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:43:14 INFO  : 'fpga -state' command is executed.
+11:43:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:14 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:43:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:43:15 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:43:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:43:15 INFO  : 'stop' command is executed.
+11:43:16 INFO  : 'ps7_init' command is executed.
+11:43:16 INFO  : 'ps7_post_config' command is executed.
+11:43:16 INFO  : 'con' command is executed.
+11:43:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:43:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:17 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+11:43:17 INFO  : Memory regions updated for context APU
+11:43:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:17 INFO  : 'con' command is executed.
+11:43:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:44:13 INFO  : Disconnected from the channel tcfchan#5.
+11:44:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:14 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:44:14 INFO  : System reset is completed.
+11:44:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:44:20 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:44:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:44:20 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:44:21 INFO  : 'ps7_init' command is executed.
+11:44:21 INFO  : 'ps7_post_config' command is executed.
+11:44:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:21 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+11:44:22 INFO  : Memory regions updated for context APU
+11:44:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:22 INFO  : 'con' command is executed.
+11:44:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:44:36 INFO  : Disconnected from the channel tcfchan#6.
+11:44:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:36 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:44:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:44:37 INFO  : System reset is completed.
+11:44:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+11:44:42 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:44:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+11:44:42 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:44:43 INFO  : 'ps7_init' command is executed.
+11:44:43 INFO  : 'ps7_post_config' command is executed.
+11:44:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:43 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+11:44:44 INFO  : Memory regions updated for context APU
+11:44:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:44 INFO  : 'con' command is executed.
+11:44:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+11:44:58 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 827 xsdb eval "disconnect tcfchan#1"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+11:44:58 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 832 xsdb eval "disconnect tcfchan#7"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+11:45:03 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:28:57 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:29:02 INFO  : XSDB server has started successfully.
+12:29:03 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+12:29:03 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+12:29:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1532318701671,  Project:1532316967849
+12:29:06 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+12:29:06 INFO  : Copied contents of C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+12:29:11 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:29:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_3::generate : No driver for stdin peripheral ps7_uart_0. Check the following reasons: 
+ 1. ps7_uart_0 is not accessible from processor ps7_cortexa9_0.
+ 2. No Driver block is defined for ps7_uart_0 in MSS file.
+    while executing
+"error "No driver for stdin peripheral $stdin. Check the following reasons: \n 1. $stdin is not accessible from processor $processor.\n 2. No Driver bl..."
+    (procedure "::hsi::utils::handle_stdin" line 11)
+    invoked from within
+"::hsi::utils::handle_stdin $os_handle"
+    (procedure "::sw_standalone_v5_3::generate" line 168)
+    invoked from within
+"::sw_standalone_v5_3::generate standalone"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+12:29:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+12:29:16 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::generate_bsp' failed due to earlier errors.
+
+12:29:16 ERROR : Error updating BSP project MSS files.
+12:29:17 INFO  : Updating hardware inferred compiler options for DMA_Test.
+12:29:17 INFO  : Updating hardware inferred compiler options for test.
+12:29:17 INFO  : Clearing existing target manager status.
+12:30:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+12:30:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+12:30:52 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+12:30:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+12:30:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+12:30:53 INFO  : Unable to read in MSS file C:\Users\yaris\Desktop\PS_PL_DMA_FIFO\PS_PL_DMA_FIFO.sdk\test_bsp\system.mss : null
+12:31:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:31:04 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:31:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+12:31:04 INFO  : System reset is completed.
+12:31:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+12:31:10 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:31:10 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+12:31:10 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:31:11 INFO  : 'ps7_init' command is executed.
+12:31:11 INFO  : 'ps7_post_config' command is executed.
+12:31:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:31:11 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:31:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+12:31:11 INFO  : Memory regions updated for context APU
+12:31:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:31:12 INFO  : 'con' command is executed.
+12:31:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+12:31:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+12:31:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+12:31:24 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+12:31:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+12:31:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+12:31:24 INFO  : Unable to read in MSS file C:\Users\yaris\Desktop\PS_PL_DMA_FIFO\PS_PL_DMA_FIFO.sdk\test_bsp\system.mss : null
+12:31:29 INFO  : Disconnected from the channel tcfchan#1.
+12:31:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:31:29 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:31:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+12:31:30 INFO  : System reset is completed.
+12:31:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+12:31:35 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+12:31:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+12:31:35 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:31:36 INFO  : 'ps7_init' command is executed.
+12:31:36 INFO  : 'ps7_post_config' command is executed.
+12:31:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:31:36 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:31:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+12:31:36 INFO  : Memory regions updated for context APU
+12:31:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:31:37 INFO  : 'con' command is executed.
+12:31:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+12:33:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+12:33:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+12:33:54 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+12:33:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+12:33:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+12:33:55 INFO  : Unable to read in MSS file C:\Users\yaris\Desktop\PS_PL_DMA_FIFO\PS_PL_DMA_FIFO.sdk\test_bsp\system.mss : null
+12:35:26 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:35:26 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:38:35 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+12:38:35 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+13:02:51 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:02:54 INFO  : XSDB server has started successfully.
+13:02:55 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+13:02:55 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+13:02:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1532322098558,  Project:1532318701671
+13:02:58 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+13:02:58 INFO  : Copied contents of C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+13:03:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:03:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_standalone_v5_3::generate : No driver for stdin peripheral ps7_uart_0. Check the following reasons: 
+ 1. ps7_uart_0 is not accessible from processor ps7_cortexa9_0.
+ 2. No Driver block is defined for ps7_uart_0 in MSS file.
+    while executing
+"error "No driver for stdin peripheral $stdin. Check the following reasons: \n 1. $stdin is not accessible from processor $processor.\n 2. No Driver bl..."
+    (procedure "::hsi::utils::handle_stdin" line 11)
+    invoked from within
+"::hsi::utils::handle_stdin $os_handle"
+    (procedure "::sw_standalone_v5_3::generate" line 168)
+    invoked from within
+"::sw_standalone_v5_3::generate standalone"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+13:03:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+13:03:51 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::generate_bsp' failed due to earlier errors.
+
+13:03:51 ERROR : Error updating BSP project MSS files.
+13:03:52 INFO  : Updating hardware inferred compiler options for DMA_Test.
+13:03:53 INFO  : Updating hardware inferred compiler options for test.
+13:03:53 INFO  : Clearing existing target manager status.
+13:13:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:15 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+13:13:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:15 INFO  : Unable to read in MSS file C:\Users\yaris\Desktop\PS_PL_DMA_FIFO\PS_PL_DMA_FIFO.sdk\test_bsp\system.mss : null
+13:13:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:16 ERROR : Failed to get_connected_periphs
+Reason: ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+
+13:13:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:18 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+13:13:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:18 INFO  : Unable to read in MSS file C:\Users\yaris\Desktop\PS_PL_DMA_FIFO\PS_PL_DMA_FIFO.sdk\test_bsp\system.mss : null
+13:13:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:31 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:13:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:13:32 INFO  : System reset is completed.
+13:13:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:13:37 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+13:13:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:13:38 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:13:38 INFO  : 'ps7_init' command is executed.
+13:13:39 INFO  : 'ps7_post_config' command is executed.
+13:13:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:39 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:13:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+13:13:40 INFO  : Memory regions updated for context APU
+13:13:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:13:40 INFO  : 'con' command is executed.
+13:13:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:13:44 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:44 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:44 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+13:13:44 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test_bsp/system.mss line 177 - No IP instance named ps7_uart_0 present in hardware design
+
+13:13:44 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+13:13:45 INFO  : Unable to read in MSS file C:\Users\yaris\Desktop\PS_PL_DMA_FIFO\PS_PL_DMA_FIFO.sdk\test_bsp\system.mss : null
+13:15:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:15:47 INFO  : 'fpga -state' command is executed.
+13:15:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:15:48 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:15:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:15:48 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:15:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:15:49 INFO  : 'stop' command is executed.
+13:15:49 INFO  : 'ps7_init' command is executed.
+13:15:50 INFO  : 'ps7_post_config' command is executed.
+13:15:50 INFO  : 'con' command is executed.
+13:15:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:15:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:51 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:15:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+13:15:51 INFO  : Memory regions updated for context APU
+13:15:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:51 INFO  : 'con' command is executed.
+13:15:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:18:26 INFO  : Disconnected from the channel tcfchan#1.
+13:18:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:18:27 INFO  : 'fpga -state' command is executed.
+13:18:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:27 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:18:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:18:28 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:18:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:18:28 INFO  : 'stop' command is executed.
+13:18:29 INFO  : 'ps7_init' command is executed.
+13:18:29 INFO  : 'ps7_post_config' command is executed.
+13:18:29 INFO  : 'con' command is executed.
+13:18:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:18:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:18:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:18:30 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:18:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:18:30 INFO  : Memory regions updated for context APU
+13:18:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:18:30 INFO  : 'con' command is executed.
+13:18:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:19:12 INFO  : Disconnected from the channel tcfchan#2.
+13:19:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:19:13 INFO  : 'fpga -state' command is executed.
+13:19:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:13 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:19:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:19:14 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:19:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:19:14 INFO  : 'stop' command is executed.
+13:19:15 INFO  : 'ps7_init' command is executed.
+13:19:15 INFO  : 'ps7_post_config' command is executed.
+13:19:15 INFO  : 'con' command is executed.
+13:19:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:19:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:16 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:19:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+13:19:16 INFO  : Memory regions updated for context APU
+13:19:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:16 INFO  : 'con' command is executed.
+13:19:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:19:30 INFO  : Disconnected from the channel tcfchan#3.
+13:19:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:19:31 INFO  : 'fpga -state' command is executed.
+13:19:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:31 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:19:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:19:32 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:19:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:19:32 INFO  : 'stop' command is executed.
+13:19:33 INFO  : 'ps7_init' command is executed.
+13:19:33 INFO  : 'ps7_post_config' command is executed.
+13:19:33 INFO  : 'con' command is executed.
+13:19:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:19:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:34 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:19:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:19:34 INFO  : Memory regions updated for context APU
+13:19:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:34 INFO  : 'con' command is executed.
+13:19:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:21:13 INFO  : Disconnected from the channel tcfchan#4.
+13:21:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:21:14 INFO  : 'fpga -state' command is executed.
+13:21:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:14 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:21:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:21:14 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:21:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:21:15 INFO  : 'stop' command is executed.
+13:21:15 INFO  : 'ps7_init' command is executed.
+13:21:16 INFO  : 'ps7_post_config' command is executed.
+13:21:16 INFO  : 'con' command is executed.
+13:21:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:21:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:17 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:21:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:21:17 INFO  : Memory regions updated for context APU
+13:21:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:21:17 INFO  : 'con' command is executed.
+13:21:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:38:15 INFO  : Disconnected from the channel tcfchan#5.
+13:38:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:38:16 INFO  : 'fpga -state' command is executed.
+13:38:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:16 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:38:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:38:16 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:38:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:38:17 INFO  : 'stop' command is executed.
+13:38:18 INFO  : 'ps7_init' command is executed.
+13:38:18 INFO  : 'ps7_post_config' command is executed.
+13:38:18 INFO  : 'con' command is executed.
+13:38:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:38:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:19 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:38:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:38:19 INFO  : Memory regions updated for context APU
+13:38:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:38:19 INFO  : 'con' command is executed.
+13:38:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:44:15 INFO  : Disconnected from the channel tcfchan#6.
+13:44:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:44:16 INFO  : 'fpga -state' command is executed.
+13:44:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:44:16 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:44:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:44:16 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:44:17 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:44:17 INFO  : 'stop' command is executed.
+13:44:18 ERROR : AP transaction error, DAP status f0000021
+13:44:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+13:44:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:44:34 INFO  : 'fpga -state' command is executed.
+13:44:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:44:34 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:44:35 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4* xc7z010
+13:44:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+----------------End of Script----------------
+
+13:44:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:44:40 INFO  : 'fpga -state' command is executed.
+13:44:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:44:41 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:44:41 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Running)
+  4* xc7z010
+13:44:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+----------------End of Script----------------
+
+13:45:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:45:00 INFO  : 'fpga -state' command is executed.
+13:45:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:01 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:45:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:45:01 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:45:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:45:01 INFO  : 'stop' command is executed.
+13:45:02 INFO  : 'ps7_init' command is executed.
+13:45:02 INFO  : 'ps7_post_config' command is executed.
+13:45:02 INFO  : 'con' command is executed.
+13:45:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:45:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:45:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:45:03 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:45:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:45:03 INFO  : Memory regions updated for context APU
+13:45:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:45:04 INFO  : 'con' command is executed.
+13:45:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:45:23 INFO  : Disconnected from the channel tcfchan#7.
+13:45:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:45:24 INFO  : 'fpga -state' command is executed.
+13:45:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:45:24 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:45:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:45:25 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:45:25 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:45:26 INFO  : 'stop' command is executed.
+13:47:23 ERROR : 'ps7_init' is cancelled.
+13:47:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+13:47:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:47:48 INFO  : 'fpga -state' command is executed.
+13:47:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:47:48 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:47:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:47:49 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:47:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:47:49 INFO  : 'stop' command is executed.
+13:47:50 INFO  : 'ps7_init' command is executed.
+13:47:50 INFO  : 'ps7_post_config' command is executed.
+13:47:50 INFO  : 'con' command is executed.
+13:47:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:47:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:47:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:47:51 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:47:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:47:51 INFO  : Memory regions updated for context APU
+13:47:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:47:52 INFO  : 'con' command is executed.
+13:47:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:50:17 INFO  : Disconnected from the channel tcfchan#8.
+13:50:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:50:18 INFO  : 'fpga -state' command is executed.
+13:50:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:50:18 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:50:19 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z010
+13:50:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+----------------End of Script----------------
+
+13:50:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:50:46 INFO  : 'fpga -state' command is executed.
+13:50:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:50:46 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:50:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:50:46 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:50:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:50:47 INFO  : 'stop' command is executed.
+13:50:48 INFO  : 'ps7_init' command is executed.
+13:50:48 INFO  : 'ps7_post_config' command is executed.
+13:50:48 INFO  : 'con' command is executed.
+13:50:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:50:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:50:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:50:49 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:50:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:50:49 INFO  : Memory regions updated for context APU
+13:50:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:50:49 INFO  : 'con' command is executed.
+13:50:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:51:38 INFO  : Disconnected from the channel tcfchan#9.
+13:51:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:51:38 INFO  : 'fpga -state' command is executed.
+13:51:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:51:39 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:51:39 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z010
+13:51:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+----------------End of Script----------------
+
+13:52:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:52:13 INFO  : 'fpga -state' command is executed.
+13:52:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:13 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:52:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:52:14 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:52:14 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:52:14 INFO  : 'stop' command is executed.
+13:52:15 INFO  : 'ps7_init' command is executed.
+13:52:15 INFO  : 'ps7_post_config' command is executed.
+13:52:15 INFO  : 'con' command is executed.
+13:52:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+13:52:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:16 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:52:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+13:52:16 INFO  : Memory regions updated for context APU
+13:52:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:52:16 INFO  : 'con' command is executed.
+13:52:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+13:52:27 INFO  : Disconnected from the channel tcfchan#10.
+13:52:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:52:28 INFO  : 'fpga -state' command is executed.
+13:52:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:28 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:52:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:52:29 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:52:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:52:30 INFO  : 'stop' command is executed.
+13:53:28 ERROR : 'ps7_init' is cancelled.
+13:53:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+13:56:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+13:56:38 INFO  : 'fpga -state' command is executed.
+13:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:38 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+13:56:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:56:39 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+13:56:39 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+13:56:39 INFO  : 'stop' command is executed.
+13:58:11 ERROR : 'ps7_init' is cancelled.
+13:58:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+13:58:20 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:59:17 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:59:19 INFO  : XSDB server has started successfully.
+13:59:20 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+13:59:20 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+14:00:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:00:29 INFO  : 'fpga -state' command is executed.
+14:00:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:00:29 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:00:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:00:29 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:00:30 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:00:30 INFO  : 'stop' command is executed.
+14:00:36 ERROR : 'ps7_init' is cancelled.
+14:00:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:01:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:01:12 INFO  : 'fpga -state' command is executed.
+14:01:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:12 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:01:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:01:12 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:01:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:01:13 INFO  : 'stop' command is executed.
+14:01:13 INFO  : 'ps7_init' command is executed.
+14:01:13 INFO  : 'ps7_post_config' command is executed.
+14:01:13 INFO  : 'con' command is executed.
+14:01:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:01:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:14 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:01:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+14:01:14 INFO  : Memory regions updated for context APU
+14:01:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:15 INFO  : 'con' command is executed.
+14:01:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:01:25 INFO  : Disconnected from the channel tcfchan#1.
+14:01:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:01:26 INFO  : 'fpga -state' command is executed.
+14:01:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:26 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:01:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:01:27 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:01:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:01:27 INFO  : 'stop' command is executed.
+14:01:28 INFO  : 'ps7_init' command is executed.
+14:01:28 INFO  : 'ps7_post_config' command is executed.
+14:01:28 INFO  : 'con' command is executed.
+14:01:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:01:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:29 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:01:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+14:01:29 INFO  : Memory regions updated for context APU
+14:01:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:01:29 INFO  : 'con' command is executed.
+14:01:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:01:51 INFO  : Disconnected from the channel tcfchan#2.
+14:01:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:01:52 INFO  : 'fpga -state' command is executed.
+14:01:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:52 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:01:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:01:52 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:01:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:01:54 INFO  : 'stop' command is executed.
+14:02:32 ERROR : Invalid DAP ACK value: 6
+14:02:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:02:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:02:39 INFO  : 'fpga -state' command is executed.
+14:02:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:02:39 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:02:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:02:40 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:02:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:02:40 INFO  : 'stop' command is executed.
+14:02:41 INFO  : 'ps7_init' command is executed.
+14:02:41 INFO  : 'ps7_post_config' command is executed.
+14:02:41 INFO  : 'con' command is executed.
+14:02:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:02:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:42 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:02:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+14:02:42 INFO  : Memory regions updated for context APU
+14:02:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:02:42 INFO  : 'con' command is executed.
+14:02:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:03:07 INFO  : Disconnected from the channel tcfchan#3.
+14:03:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:03:08 INFO  : 'fpga -state' command is executed.
+14:03:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:03:08 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:03:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:03:09 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:03:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:03:10 INFO  : 'stop' command is executed.
+14:04:18 ERROR : 'ps7_init' is cancelled.
+14:04:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+14:04:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:04:30 INFO  : 'fpga -state' command is executed.
+14:04:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:31 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:04:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:04:31 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:04:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:04:31 INFO  : 'stop' command is executed.
+14:04:32 INFO  : 'ps7_init' command is executed.
+14:04:32 INFO  : 'ps7_post_config' command is executed.
+14:04:32 INFO  : 'con' command is executed.
+14:04:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:04:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:33 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:04:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+14:04:33 INFO  : Memory regions updated for context APU
+14:04:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:04:33 INFO  : 'con' command is executed.
+14:04:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:05:03 INFO  : Disconnected from the channel tcfchan#4.
+14:05:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:05:04 INFO  : 'fpga -state' command is executed.
+14:05:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:04 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:05:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:05:04 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:05:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:05:05 INFO  : 'stop' command is executed.
+14:05:05 INFO  : 'ps7_init' command is executed.
+14:05:05 INFO  : 'ps7_post_config' command is executed.
+14:05:05 INFO  : 'con' command is executed.
+14:05:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:05:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:06 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:05:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Test/Debug/DMA_Test.elf
+----------------End of Script----------------
+
+14:05:06 INFO  : Memory regions updated for context APU
+14:05:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:06 INFO  : 'con' command is executed.
+14:05:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:07:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:07:28 INFO  : 'fpga -state' command is executed.
+14:07:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:28 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:07:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:07:29 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:07:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:07:29 INFO  : 'stop' command is executed.
+14:07:29 INFO  : 'ps7_init' command is executed.
+14:07:30 INFO  : 'ps7_post_config' command is executed.
+14:07:30 INFO  : 'con' command is executed.
+14:07:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:07:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:31 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:07:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:07:31 INFO  : Memory regions updated for context APU
+14:07:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:31 INFO  : 'con' command is executed.
+14:07:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:08:09 INFO  : Disconnected from the channel tcfchan#5.
+14:08:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:11 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:08:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:08:13 INFO  : System reset is completed.
+14:08:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:08:18 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:08:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:08:18 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:08:19 INFO  : 'ps7_init' command is executed.
+14:08:19 INFO  : 'ps7_post_config' command is executed.
+14:08:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:20 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:08:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+14:08:20 INFO  : Memory regions updated for context APU
+14:08:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:20 INFO  : 'con' command is executed.
+14:08:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:08:51 INFO  : Disconnected from the channel tcfchan#6.
+14:08:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:52 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:08:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:08:52 INFO  : System reset is completed.
+14:08:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:08:57 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:08:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:08:58 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:08:58 INFO  : 'ps7_init' command is executed.
+14:08:58 INFO  : 'ps7_post_config' command is executed.
+14:08:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:59 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:08:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+14:08:59 INFO  : Memory regions updated for context APU
+14:08:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:08:59 INFO  : 'con' command is executed.
+14:08:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:09:27 INFO  : Disconnected from the channel tcfchan#7.
+14:09:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:09:28 INFO  : 'fpga -state' command is executed.
+14:09:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:28 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:09:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:09:29 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:09:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:09:29 INFO  : 'stop' command is executed.
+14:09:30 INFO  : 'ps7_init' command is executed.
+14:09:30 INFO  : 'ps7_post_config' command is executed.
+14:09:30 INFO  : 'con' command is executed.
+14:09:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:09:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:31 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:09:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:09:31 INFO  : Memory regions updated for context APU
+14:09:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:31 INFO  : 'con' command is executed.
+14:09:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:09:44 INFO  : Disconnected from the channel tcfchan#8.
+14:09:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:09:44 INFO  : 'fpga -state' command is executed.
+14:09:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:09:44 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:09:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:09:45 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:09:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:09:45 INFO  : 'stop' command is executed.
+14:09:46 INFO  : 'ps7_init' command is executed.
+14:09:47 INFO  : 'ps7_post_config' command is executed.
+14:09:47 INFO  : 'con' command is executed.
+14:09:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:09:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:48 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:09:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:09:48 INFO  : Memory regions updated for context APU
+14:09:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:09:48 INFO  : 'con' command is executed.
+14:09:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:15:24 INFO  : Disconnected from the channel tcfchan#9.
+14:15:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:15:25 INFO  : 'fpga -state' command is executed.
+14:15:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:25 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:15:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:15:26 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:15:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:15:26 INFO  : 'stop' command is executed.
+14:15:27 INFO  : 'ps7_init' command is executed.
+14:15:27 INFO  : 'ps7_post_config' command is executed.
+14:15:27 INFO  : 'con' command is executed.
+14:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:15:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:28 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:15:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:15:29 INFO  : Memory regions updated for context APU
+14:15:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:29 INFO  : 'con' command is executed.
+14:15:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:19:18 INFO  : Disconnected from the channel tcfchan#10.
+14:19:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:19:19 INFO  : 'fpga -state' command is executed.
+14:19:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:19:19 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:19:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:19:19 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:19:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:19:20 INFO  : 'stop' command is executed.
+14:19:21 INFO  : 'ps7_init' command is executed.
+14:19:21 INFO  : 'ps7_post_config' command is executed.
+14:19:21 INFO  : 'con' command is executed.
+14:19:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:19:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:22 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:19:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:19:22 INFO  : Memory regions updated for context APU
+14:19:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:22 INFO  : 'con' command is executed.
+14:19:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:23:31 INFO  : Disconnected from the channel tcfchan#11.
+14:23:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:23:31 INFO  : 'fpga -state' command is executed.
+14:23:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:32 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:23:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:23:32 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:23:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:23:32 INFO  : 'stop' command is executed.
+14:23:33 INFO  : 'ps7_init' command is executed.
+14:23:33 INFO  : 'ps7_post_config' command is executed.
+14:23:33 INFO  : 'con' command is executed.
+14:23:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:23:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:34 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:23:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:23:34 INFO  : Memory regions updated for context APU
+14:23:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:23:35 INFO  : 'con' command is executed.
+14:23:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:31:39 INFO  : Disconnected from the channel tcfchan#12.
+14:31:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:31:40 INFO  : 'fpga -state' command is executed.
+14:31:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:31:40 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:31:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:31:41 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:31:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:31:41 INFO  : 'stop' command is executed.
+14:31:42 INFO  : 'ps7_init' command is executed.
+14:31:42 INFO  : 'ps7_post_config' command is executed.
+14:31:42 INFO  : 'con' command is executed.
+14:31:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:31:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:43 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:31:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:31:43 INFO  : Memory regions updated for context APU
+14:31:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:43 INFO  : 'con' command is executed.
+14:31:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:32:17 INFO  : Disconnected from the channel tcfchan#13.
+14:32:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:32:18 INFO  : 'fpga -state' command is executed.
+14:32:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:32:18 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:32:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:32:19 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:32:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:32:19 INFO  : 'stop' command is executed.
+14:32:20 INFO  : 'ps7_init' command is executed.
+14:32:20 INFO  : 'ps7_post_config' command is executed.
+14:32:20 INFO  : 'con' command is executed.
+14:32:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:32:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:32:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:32:21 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:32:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:32:21 INFO  : Memory regions updated for context APU
+14:32:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:32:21 INFO  : 'con' command is executed.
+14:32:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:33:12 INFO  : Disconnected from the channel tcfchan#14.
+14:33:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:33:12 INFO  : 'fpga -state' command is executed.
+14:33:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:33:13 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:33:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:33:13 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:33:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:33:14 INFO  : 'stop' command is executed.
+14:33:15 INFO  : 'ps7_init' command is executed.
+14:33:15 INFO  : 'ps7_post_config' command is executed.
+14:33:15 INFO  : 'con' command is executed.
+14:33:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:33:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:16 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:33:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:33:16 INFO  : Memory regions updated for context APU
+14:33:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:16 INFO  : 'con' command is executed.
+14:33:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:33:51 INFO  : Disconnected from the channel tcfchan#15.
+14:33:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:33:51 INFO  : 'fpga -state' command is executed.
+14:33:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:33:52 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:33:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:33:52 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:33:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:33:52 INFO  : 'stop' command is executed.
+14:33:53 INFO  : 'ps7_init' command is executed.
+14:33:53 INFO  : 'ps7_post_config' command is executed.
+14:33:53 INFO  : 'con' command is executed.
+14:33:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:33:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:54 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:33:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:33:54 INFO  : Memory regions updated for context APU
+14:33:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:33:55 INFO  : 'con' command is executed.
+14:33:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:41:51 INFO  : Disconnected from the channel tcfchan#16.
+14:41:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:41:51 INFO  : 'fpga -state' command is executed.
+14:41:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:52 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:41:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:41:52 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:41:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:41:52 INFO  : 'stop' command is executed.
+14:41:53 INFO  : 'ps7_init' command is executed.
+14:41:53 INFO  : 'ps7_post_config' command is executed.
+14:41:53 INFO  : 'con' command is executed.
+14:41:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:41:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:54 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:41:54 INFO  : Memory regions updated for context APU
+14:41:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:55 INFO  : 'con' command is executed.
+14:41:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:44:27 INFO  : Disconnected from the channel tcfchan#17.
+14:44:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:44:28 INFO  : 'fpga -state' command is executed.
+14:44:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:44:28 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:44:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:44:28 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:44:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:44:29 INFO  : 'stop' command is executed.
+14:44:30 INFO  : 'ps7_init' command is executed.
+14:44:30 INFO  : 'ps7_post_config' command is executed.
+14:44:30 INFO  : 'con' command is executed.
+14:44:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:44:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:31 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:44:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:44:31 INFO  : Memory regions updated for context APU
+14:44:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:31 INFO  : 'con' command is executed.
+14:44:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:45:50 INFO  : Disconnected from the channel tcfchan#18.
+14:45:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:45:50 INFO  : 'fpga -state' command is executed.
+14:45:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:51 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:45:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:45:51 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:45:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:45:51 INFO  : 'stop' command is executed.
+14:45:52 INFO  : 'ps7_init' command is executed.
+14:45:52 INFO  : 'ps7_post_config' command is executed.
+14:45:52 INFO  : 'con' command is executed.
+14:45:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:45:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:53 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:45:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:45:53 INFO  : Memory regions updated for context APU
+14:45:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:54 INFO  : 'con' command is executed.
+14:45:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+15:04:06 INFO  : Disconnected from the channel tcfchan#19.
+15:04:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+15:04:06 INFO  : 'fpga -state' command is executed.
+15:04:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:04:07 INFO  : Sourcing of 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:04:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+15:04:07 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:04:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+15:04:07 INFO  : 'stop' command is executed.
+15:04:08 INFO  : 'ps7_init' command is executed.
+15:04:08 INFO  : 'ps7_post_config' command is executed.
+15:04:08 INFO  : 'con' command is executed.
+15:04:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:04:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:10 INFO  : The application 'C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:04:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+15:04:10 INFO  : Memory regions updated for context APU
+15:04:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:04:10 INFO  : 'con' command is executed.
+15:04:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+15:04:57 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+15:04:58 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:07:32 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:07:36 INFO  : XSDB server has started successfully.
+15:07:37 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+15:07:38 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+15:07:59 ERROR : Failed to get_design_properties
+java.lang.Exception: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is closed
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:875)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+15:09:06 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:09:11 INFO  : XSDB server has started successfully.
+15:09:18 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+15:09:19 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+15:11:31 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:11:33 INFO  : XSDB server has started successfully.
+15:11:39 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+15:11:40 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+09:19:28 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+09:19:31 INFO  : XSDB server has started successfully.
+09:19:38 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+09:28:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:41 INFO  : Sourcing of 'C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:28:41 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+09:28:41 INFO  : System reset is completed.
+09:28:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+09:28:47 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:28:47 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+09:28:47 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:28:48 INFO  : 'ps7_init' command is executed.
+09:28:48 INFO  : 'ps7_post_config' command is executed.
+09:28:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:28:49 INFO  : The application 'C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:28:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/project/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+09:28:49 INFO  : Memory regions updated for context APU
+09:28:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:28:49 INFO  : 'con' command is executed.
+09:28:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+09:32:10 INFO  : Disconnected from the channel tcfchan#1.
+14:11:01 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:11:05 INFO  : XSDB server has started successfully.
+14:11:06 INFO  : Processing command line option -hwspec C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper.hdf.
+14:14:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:37 INFO  : Sourcing of 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:14:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:15:09 INFO  : System reset is completed.
+14:15:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:09 INFO  : Sourcing of 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:15:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+----------------End of Script----------------
+
+14:15:15 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+1. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+1. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:15:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+----------------End of Script----------------
+
+14:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:26 INFO  : Sourcing of 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:15:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:15:26 INFO  : System reset is completed.
+14:15:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:15:32 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:15:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:15:32 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:15:33 INFO  : 'ps7_init' command is executed.
+14:15:33 INFO  : 'ps7_post_config' command is executed.
+14:15:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:33 INFO  : The application 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:15:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:15:33 INFO  : Memory regions updated for context APU
+14:15:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:34 INFO  : 'con' command is executed.
+14:15:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:16:01 INFO  : Disconnected from the channel tcfchan#1.
+14:16:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:16:01 INFO  : Sourcing of 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:16:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:16:02 INFO  : System reset is completed.
+14:16:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1' command is executed.
+14:16:07 INFO  : FPGA configured successfully with bitstream "C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:16:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0' command is executed.
+14:16:07 INFO  : Hardware design information is loaded from 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:16:08 INFO  : 'ps7_init' command is executed.
+14:16:08 INFO  : 'ps7_post_config' command is executed.
+14:16:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:16:08 INFO  : The application 'C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:16:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249855245" && level==0} -index 1
+fpga -file C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+loadhw C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/system_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+dow C:/Users/yaris/Desktop/project/FIFO/PS_PL_DMA_FIFO/PS_PL_DMA_FIFO.sdk/DMA_Stream/Debug/DMA_Stream.elf
+----------------End of Script----------------
+
+14:16:08 INFO  : Memory regions updated for context APU
+14:16:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:16:09 INFO  : 'con' command is executed.
+14:16:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249855245"} -index 0
+con
+----------------End of Script----------------
+
+14:17:04 INFO  : Disconnected from the channel tcfchan#2.
