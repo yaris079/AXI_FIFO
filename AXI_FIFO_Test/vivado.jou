@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Aug 06 14:56:41 2018
+# Process ID: 4428
+# Current directory: C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1228 C:\Users\yaris\Desktop\project\FIFO\AXI_FIFO(Test)\AXI_FIFO.xpr
+# Log file: C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)/vivado.log
+# Journal file: C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)/AXI_FIFO.xpr
+launch_sdk -workspace C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)/AXI_FIFO.sdk/system_wrapper.hdf
+launch_sdk -workspace C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)/AXI_FIFO.sdk -hwspec C:/Users/yaris/Desktop/project/FIFO/AXI_FIFO(Test)/AXI_FIFO.sdk/system_wrapper.hdf

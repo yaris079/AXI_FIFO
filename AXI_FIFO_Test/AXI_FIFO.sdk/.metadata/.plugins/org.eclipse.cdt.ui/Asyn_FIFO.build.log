@@ -1,0 +1,66 @@
+14:01:23 **** Build of configuration Debug for project Asyn_FIFO ****
+make all 
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -I../../Asyn_FIFO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.d" -o "src/dma_intr.o" "../src/dma_intr.c"
+'Finished building: ../src/dma_intr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Asyn_FIFO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'axi_dma_test':
+../src/main.c:109:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' [-Wformat=]
+    sprintf(oled_str,"RX=%d",RX_success);
+    ^
+../src/main.c:109:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' [-Wformat=]
+../src/main.c:117:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' [-Wformat=]
+    sprintf(oled_str,"TX=%d",TX_success);
+    ^
+../src/main.c:117:4: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32' [-Wformat=]
+../src/main.c:140:2: warning: implicit declaration of function 'DMA_DisableIntrSystem' [-Wimplicit-function-declaration]
+  DMA_DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
+  ^
+In file included from ../src/main.c:1:0:
+../src/dma_intr.h:20:21: error: 'XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR' undeclared (first use in this function)
+ #define TX_INTR_ID  XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR
+                     ^
+../src/main.c:140:31: note: in expansion of macro 'TX_INTR_ID'
+  DMA_DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
+                               ^
+../src/dma_intr.h:20:21: note: each undeclared identifier is reported only once for each function it appears in
+ #define TX_INTR_ID  XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR
+                     ^
+../src/main.c:140:31: note: in expansion of macro 'TX_INTR_ID'
+  DMA_DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
+                               ^
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:150:27: error: 'XPAR_AXIDMA_1_DEVICE_ID' undeclared (first use in this function)
+  DMA_Intr_Init(&AxiDma1Tx,XPAR_AXIDMA_1_DEVICE_ID);
+                           ^
+../src/main.c:153:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^
+../src/main.c:154:2: warning: implicit declaration of function 'DMA_Setup_RX_Intr_System' [-Wimplicit-function-declaration]
+  DMA_Setup_RX_Intr_System(&Intc,&AxiDma0Rx,RX_INTR_ID);//setup dma interrpt system
+  ^
+../src/main.c:155:2: warning: implicit declaration of function 'DMA_Setup_TX_Intr_System' [-Wimplicit-function-declaration]
+  DMA_Setup_TX_Intr_System(&Intc,&AxiDma1Tx,TX_INTR_ID);
+  ^
+In file included from ../src/main.c:1:0:
+../src/dma_intr.h:20:21: error: 'XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR' undeclared (first use in this function)
+ #define TX_INTR_ID  XPAR_FABRIC_AXI_DMA_1_MM2S_INTROUT_INTR
+                     ^
+../src/main.c:155:44: note: in expansion of macro 'TX_INTR_ID'
+  DMA_Setup_TX_Intr_System(&Intc,&AxiDma1Tx,TX_INTR_ID);
+                                            ^
+../src/main.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/main.c: In function 'main':
+../src/main.c:173:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+
+14:01:26 Build Finished (took 2s.914ms)
+
