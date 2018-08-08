@@ -1,0 +1,25 @@
+PS_PL_DMA_FIFO 项目是使用指针写DMA控制寄存器来实现DMA传输的控制，使用一个自定义IP核进行数据的处理。数据从PS传输至PL，PL处理后回环传输至PS部分。
+
+AXI_FIFO(LOOP) 项目是使用两个DMA两个FIFO Generetor进行异步FIFO的数据传输，写数据将数据从内存写至写FIFO，读数据从读FIFO中读取数据并写至内存，写FIFO将数据传输至读FIFO形成数据环路。对DMA的控制通过使用xilinx提供的函数进行操作。
+
+AXI_FIFO(RW)使用了两个DMA两个FIFO Generetor进行异步FIFO的数据传输。读数据是通过自己写的一个符合AXI总线的用于产生数据的状态机进行的，写数据是直接写至输出端口。
+
+AXI_FIFO(BIG)在AXI_FIFO(RW)的基础上改为5M大块数据传输。
+
+AXI_FIFO(unified)将数据区域设为一致。即读数据到只能内存区域，再将此内存区域的数据输出。使用DMA读取数据放至内存，再将此数据通过DMA发送出去。
+
+AXI_FIFO(Test)对程序进行测试，使用全局时钟进行程序运行时间的计时，使用私有定时器生成50ms以内的随机数，计时结束发送一个数据包。数据包大小500K。
+
+AXI_FIFO(TestD)对程序进行测试，使用全局时钟进行程序运行时间的计时，使用私有定时器生成50ms以内的随机数，计时结束发送一个数据包。数据包大小5M，且外部时钟频率更高。
+
+AXI_FIFO(TestS)对程序进行测试，使用全局时钟进行程序运行时间的计时，数据包采用连续发送的方式，中间没有间隔，数据包大小5M，即发送完一个5M的数据后接着发送一个5M的数据，中间只有两个时钟周期的空隙。
+
+signal_ip_1.0为封装的数据产生ip核
+
+simSignal是对数据产生部分的仿真。
+
+project_1 是对fifo_generator中的native进行仿真。
+
+project_2 是对fifo_generator中的AXI-Stream进行仿真。
+
+注意：若Launch SDK无反应，请将工程目录文件夹名称的括号及括号内部分删除。
