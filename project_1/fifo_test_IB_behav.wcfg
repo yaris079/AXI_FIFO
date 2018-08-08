@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fifo_test_IB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fifo_test_IB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="57000000001fs"></ZoomEndTime>
+      <Cursor1Time time="46072510000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="14" />
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/clk_15M" type="logic">
+      <obj_property name="ElementShortName">clk_15M</obj_property>
+      <obj_property name="ObjectShortName">clk_15M</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/clk_5M" type="logic">
+      <obj_property name="ElementShortName">clk_5M</obj_property>
+      <obj_property name="ObjectShortName">clk_5M</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/wr_data" type="array">
+      <obj_property name="ElementShortName">wr_data[17:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[17:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/wr_full" type="logic">
+      <obj_property name="ElementShortName">wr_full</obj_property>
+      <obj_property name="ObjectShortName">wr_full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/wr_almost_full" type="logic">
+      <obj_property name="ElementShortName">wr_almost_full</obj_property>
+      <obj_property name="ObjectShortName">wr_almost_full</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[17:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[17:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/rd_empty" type="logic">
+      <obj_property name="ElementShortName">rd_empty</obj_property>
+      <obj_property name="ObjectShortName">rd_empty</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/rd_almost_empty" type="logic">
+      <obj_property name="ElementShortName">rd_almost_empty</obj_property>
+      <obj_property name="ObjectShortName">rd_almost_empty</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[16:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/rd_data_count" type="array">
+      <obj_property name="ElementShortName">rd_data_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/fifo_test_IB/wr_data_count" type="array">
+      <obj_property name="ElementShortName">wr_data_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_count[9:0]</obj_property>
+   </wvobject>
+</wave_config>
