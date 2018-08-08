@@ -1,0 +1,189 @@
+#include "dma_intr.h"
+#include "timer_intr.h"
+#include "sys_intr.h"
+#include "xgpio.h"
+
+static XScuGic Intc; //GIC
+static XAxiDma AxiDma0Rx;
+static XAxiDma AxiDma1Tx;
+static  XScuTimer Timer;//timer
+
+volatile u32 RX_success;
+volatile u32 TX_success;
+
+volatile u32 RX_ready=1;
+volatile u32 TX_ready=1;
+
+#define TIMER_LOAD_VALUE    166666665 //0.5S
+
+char oled_str[17]="";
+
+int Tries = NUMBER_OF_TRANSFERS;
+int i;
+int Index;
+u32 *TxBufferPtr= (u32 *)TX_BUFFER_BASE;
+u32 *RxBufferPtr=(u32 *)RX_BUFFER_BASE;
+u32 Value=0;
+float speed_tx;
+float speed_rx;
+static XGpio Led;
+static XGpio Gpio;
+int ledStatus;
+
+#define AXI_GPIO_LED_DEV_ID	        XPAR_AXI_GPIO_0_DEVICE_ID
+#define AXI_GPIO_DEV_ID	        XPAR_AXI_GPIO_1_DEVICE_ID
+
+int get_length(XAxiDma *InstancePtr, UINTPTR BuffAddr, int Direction){
+	int RingIndex = 0;
+	u32 length;
+	if(Direction == XAXIDMA_DMA_TO_DEVICE){
+		length = XAxiDma_ReadReg(InstancePtr->TxBdRing.ChanBase,
+							XAXIDMA_BUFFLEN_OFFSET);
+	}
+	else if(Direction == XAXIDMA_DEVICE_TO_DMA){
+		length = XAxiDma_ReadReg(InstancePtr->RxBdRing[RingIndex].ChanBase,
+							XAXIDMA_BUFFLEN_OFFSET);
+	}
+	return length;
+}
+
+
+int axi_dma_test()
+{
+	int Status;
+	TxDone = 0;
+	RxDone = 0;
+	Error = 0;
+
+	xil_printf("123");
+
+	xil_printf("PKT_LEN=%d\r\n",MAX_PKT_LEN);
+
+	sprintf(oled_str,"PKT_LEN=%d",MAX_PKT_LEN);
+
+	for(Index = 0; Index < (MAX_PKT_LEN+1)/4; Index ++) {//一个数是4个字节
+			TxBufferPtr[Index] = Value;
+
+			Value = (Value + 1) & 0xFF;
+	}
+	/* Flush the SrcBuffer before the DMA transfer, in case the Data Cache
+	 * is enabled
+	 */
+	Xil_DCacheFlushRange((u32)TxBufferPtr, MAX_PKT_LEN);
+	Timer_start(&Timer);
+	while(1)
+	//for(i = 0; i < Tries; i ++)
+	{
+		//RX DMA Transfer
+
+		if(RX_ready)
+		{
+			if (RX_success % 100 == 0) ledStatus = ledStatus | 0x1;
+			XGpio_DiscreteWrite(&Led, 1, ledStatus);
+			RX_ready=0;
+			Status = XAxiDma_SimpleTransfer(&AxiDma0Rx,(u32)RxBufferPtr,
+					 (u32)(MAX_PKT_LEN), XAXIDMA_DEVICE_TO_DMA);
+
+			if (Status != XST_SUCCESS) {return XST_FAILURE;}
+		}
+
+		//TX DMA Transfer
+		if(TX_ready)
+		{
+			if (TX_success % 100 == 0) ledStatus = ledStatus | 0x2;
+			XGpio_DiscreteWrite(&Led, 1, ledStatus);
+			TX_ready=0;
+			Status = XAxiDma_SimpleTransfer(&AxiDma1Tx,(u32) TxBufferPtr,
+					(u32)(MAX_PKT_LEN), XAXIDMA_DMA_TO_DEVICE);
+
+			if (Status != XST_SUCCESS) {return XST_FAILURE;}
+		}
+
+		if(RxDone)
+		{
+			if (RX_success % 100 == 0) ledStatus = 0;
+			XGpio_DiscreteWrite(&Led, 1, ledStatus);
+			RxDone=0;
+			RX_ready=1;
+			RX_success++;
+		}
+
+		if(TxDone)
+		{
+			if (TX_success % 100 == 0) ledStatus = 0;
+			XGpio_DiscreteWrite(&Led, 1, ledStatus);
+			TxDone=0;
+			TX_ready=1;
+			TX_success++;
+		}
+		if(usec==2)
+		{
+
+			usec=0;
+			sprintf(oled_str,"RX=%d",RX_success);
+			xil_printf("%s\r\n",oled_str);
+			xil_printf("%d\r\n",(unsigned int *)(AXI_DMA_RX_BASE+S2MM_LENGTH));
+			speed_rx = MAX_PKT_LEN*RX_success/1024/1024;
+
+			sprintf(oled_str,"RX_sp=%.2fMB/S",speed_rx);
+			xil_printf("%s\r\n",oled_str);
+
+			sprintf(oled_str,"TX=%d",TX_success);
+			xil_printf("%s\r\n",oled_str);
+			xil_printf("%d\r\n",(unsigned int *)(AXI_DMA_TX_BASE+MM2S_LENGTH));
+			speed_tx = MAX_PKT_LEN*TX_success/1024/1024;
+
+			sprintf(oled_str,"TX_sp=%.2fMB/S",speed_tx);
+			xil_printf("%s\r\n",oled_str);
+
+			RX_success=0;
+			TX_success=0;
+
+		}
+
+		if (Error) {
+			xil_printf("Failed test transmit%s done, "
+			"receive%s done\r\n", TxDone? "":" not",
+							RxDone? "":" not");
+			goto Done;
+		}
+
+	}
+
+	/* Disable TX and RX Ring interrupts and return success */
+	DMA_DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
+Done:
+	xil_printf("--- Exiting Test --- \r\n");
+	return XST_SUCCESS;
+
+}
+
+int init_intr_sys(void)
+{
+	DMA_Intr_Init(&AxiDma0Rx,XPAR_AXIDMA_0_DEVICE_ID);//initial interrupt system
+	DMA_Intr_Init(&AxiDma1Tx,XPAR_AXIDMA_1_DEVICE_ID);
+	Timer_init(&Timer,TIMER_LOAD_VALUE,0);
+	Init_Intr_System(&Intc); // initial DMA interrupt system
+	Setup_Intr_Exception(&Intc);
+	DMA_Setup_RX_Intr_System(&Intc,&AxiDma0Rx,RX_INTR_ID);//setup dma interrpt system
+	DMA_Setup_TX_Intr_System(&Intc,&AxiDma1Tx,TX_INTR_ID);
+	Timer_Setup_Intr_System(&Intc,&Timer,TIMER_IRPT_INTR);
+	DMA_Intr_Enable(&Intc,&AxiDma0Rx,0);
+	DMA_Intr_Enable(&Intc,&AxiDma1Tx,1);
+	ledStatus = 0;
+}
+
+int main(void)
+{
+	XGpio_Initialize(&Led, AXI_GPIO_LED_DEV_ID);
+	XGpio_SetDataDirection(&Led, 1, 0);
+	XGpio_Initialize(&Gpio, AXI_GPIO_DEV_ID);
+	XGpio_SetDataDirection(&Gpio, 1, 0);
+	init_intr_sys();
+	XGpio_DiscreteWrite(&Led, 1, 0);
+	XGpio_DiscreteWrite(&Gpio, 1, 1);
+	axi_dma_test();
+	XGpio_DiscreteWrite(&Led, 1, 0);
+}
+
+

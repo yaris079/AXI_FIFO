@@ -1,0 +1,14 @@
+08:02:05 **** Incremental Build of configuration Debug for project FIFO ****
+make all 
+'Building file: ../src/dma_intr.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma_intr.o" -I../../FIFO_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma_intr.d" -MT"src/dma_intr.d" -o "src/dma_intr.o" "../src/dma_intr.c"
+In file included from ../src/dma_intr.c:1:0:
+../src/dma_intr.h:3:21: fatal error: xaxidma.h: No such file or directory
+ #include "xaxidma.h"
+                     ^
+compilation terminated.
+make: *** [src/dma_intr.o] ´íÎó 1
+
+08:02:07 Build Finished (took 2s.160ms)
+
